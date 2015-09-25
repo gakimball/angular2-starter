@@ -1,0 +1,19 @@
+{
+  "name": "angular2",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "tsd install angular2 es6-promise rx rx-lite",
+    "start": "npm run scripts & npm run server",
+    "scripts": "tsc --watch -m commonjs -t es5 --emitDecoratorMetadata app.ts",
+    "server": "http-server"
+  },
+  "author": "Geoff Kimball <geoff@zurb.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "http-server": "^0.8.4",
+    "tsc": "^1.20150623.0",
+    "tsd": "^0.6.4"
+  }
+}
